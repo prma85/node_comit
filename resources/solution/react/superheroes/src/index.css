@@ -14,8 +14,9 @@ code {
 
 body .container{
   background-color: #f1f1f1;
-  height: 100vh;
+  min-height: 100vh;
   box-shadow: black 0px 10px 15px;
+  margin: 20px auto;
 }
 
 .superhero {
