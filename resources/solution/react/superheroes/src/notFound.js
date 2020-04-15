@@ -11,7 +11,9 @@ const NotFound = () => {
         or information.
       </p>
       <p>
-        <Link href="/" className="btn btn-primary">Go back to home</Link>
+        <Link href="/" className="btn btn-primary">
+          Go back to home
+        </Link>
       </p>
     </Jumbotron>
   );

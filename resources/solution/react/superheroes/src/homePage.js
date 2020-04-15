@@ -1,5 +1,6 @@
 import React from "react";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
+
 import Superheroes from "./db/superheroes";
 
 const Main = () => {
@@ -9,7 +10,9 @@ const Main = () => {
         <Card className="superhero" style={{ width: "30%" }} key={index}>
           <Card.Img variant="top" src={"/img/superheroes/" + superhero.image} />
           <Card.Title>{superhero.name}</Card.Title>
-          <Button href={"#superhero/" + superhero.id} variant="primary">Show me more!</Button>
+          <Button href={"#superhero/" + superhero.id} variant="primary">
+            Show me more!
+          </Button>
         </Card>
       );
     });
