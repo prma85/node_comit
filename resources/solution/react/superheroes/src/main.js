@@ -7,9 +7,9 @@ const Main = () => {
     return Superheroes.map((superhero, index) => {
       return (
         <Card className="superhero" style={{ width: "30%" }} key={index}>
-          <Card.Img variant="top" src={"img/superheroes/" + superhero.image} />
+          <Card.Img variant="top" src={"/img/superheroes/" + superhero.image} />
           <Card.Title>{superhero.name}</Card.Title>
-          <Button href="" variant="primary">Show me more!</Button>
+          <Button href={"#superhero/" + superhero.id} variant="primary">Show me more!</Button>
         </Card>
       );
     });
