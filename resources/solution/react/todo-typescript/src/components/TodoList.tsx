@@ -1,5 +1,5 @@
-import React from "react";
-import { Row, Button, Col } from "antd";
+import { Button, Col, Row } from 'antd';
+import React from 'react';
 
 export interface Todo {
   text: string;
@@ -10,6 +10,7 @@ export interface Todo {
 interface TodoListProps {
   todos: Todo[]; // or todos: Array<Todo>
   removeTodo: (value: number) => void;
+  doSomethingElse?: () => void; // the "?" means that it is optional
 }
 
 const TodoList = (props: TodoListProps) => {
@@ -27,7 +28,9 @@ const TodoList = (props: TodoListProps) => {
 
   return (
     <Row justify="center" style={{ marginTop: "20px" }}>
-      <Col span={8}><ul>{renderTodos}</ul></Col>
+      <Col span={8}>
+        <ul>{renderTodos}</ul>
+      </Col>
     </Row>
   );
 };
