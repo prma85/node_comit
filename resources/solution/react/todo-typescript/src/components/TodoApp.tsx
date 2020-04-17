@@ -1,6 +1,7 @@
 import React from "react";
 import TodoList, { Todo } from "./TodoList";
 import TodoForm from "./TodoForm";
+import {Row, Col} from "antd"
 
 interface TodoAppState {
   data: Todo[],
@@ -42,10 +43,10 @@ class TodoApp extends React.Component<any, TodoAppState> {
 
   render() {
     return (
-      <>
+      <div>
         <TodoForm addTodo={this.addTodo.bind(this)} />
         <TodoList todos={this.state.data} removeTodo={this.removeTodo.bind(this)} />
-      </>
+      </div>
     )
   }
 }

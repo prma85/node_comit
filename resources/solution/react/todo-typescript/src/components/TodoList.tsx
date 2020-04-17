@@ -1,27 +1,35 @@
-import React from 'react';
+import React from "react";
+import { Row, Button, Col } from "antd";
 
 export interface Todo {
   text: string;
   id: number;
-  toString: () => string
+  toString: () => string;
 }
 
 interface TodoListProps {
   todos: Todo[]; // or todos: Array<Todo>
-  removeTodo: (value: number) => void
+  removeTodo: (value: number) => void;
 }
 
 const TodoList = (props: TodoListProps) => {
   const todos = props.todos;
   const remove = props.removeTodo;
 
-  const renderTodos = todos.map(todo => (
-    <li onClick={()=> remove(todo.id)} key={todo.id}>{todo.text}</li>
-  ))
+  const renderTodos = todos.map((todo) => (
+    <li key={todo.id}>
+      <span style={{ marginRight: "10px" }}>{todo.text}</span>
+      <Button type="danger" onClick={() => remove(todo.id)} key={todo.id}>
+        Delete
+      </Button>
+    </li>
+  ));
 
   return (
-    <ul>{renderTodos}</ul>
-  )
-}
+    <Row justify="center" style={{ marginTop: "20px" }}>
+      <Col span={8}><ul>{renderTodos}</ul></Col>
+    </Row>
+  );
+};
 
 export default TodoList;
