@@ -1,6 +1,6 @@
 import React from 'react';
 import {Layout} from 'antd';
-import TodoForm from './components/TodoForm';
+import TodoApp from './components/TodoApp';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <h1>To-Do List</h1>
       </Layout.Header>
       <Layout.Content>
-        <TodoForm addTodo={(value: string)=> alert(value)} />
+        <TodoApp />
       </Layout.Content>
     </Layout>
   );
