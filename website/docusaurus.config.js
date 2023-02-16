@@ -14,6 +14,8 @@ module.exports = {
   organizationName: 'prma85', // Usually your GitHub org/user name.
   projectName: 'node_comit', // Usually your repo name.
   scripts: ['https://buttons.github.io/buttons.js'],
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
   themeConfig: {
     algolia: {
       apiKey: '8749c390fc61de93801a6b0204e7da99',
