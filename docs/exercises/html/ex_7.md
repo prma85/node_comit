@@ -26,7 +26,6 @@
    |-- dog_4.html
    |-- dog_5.html
    ```
-1. You can download the images this way: ![How to download](../../resources/images/html/download_images.png)
 
 ## dog_1.html
 

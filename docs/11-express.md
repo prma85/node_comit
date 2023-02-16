@@ -11,7 +11,6 @@ title: Building a site using Node.js and Express
 - And configure our statics assets
 - Also, we can create templates using Pug and render them from Express server using the render method
 - It's time to put everything in action
-- You can donwload the project code from the [github repo]()
 - First lets create a node-site-example folder and change directory into it
 
   ```bash
@@ -613,7 +612,6 @@ title: Building a site using Node.js and Express
 - Use newId as id
 - And the name we get it from the request body
 - As we don't have an image for now let's add some value
-- Also you can download this [lukecage.jpg]() and put it inside the img folder
 - Now that we have the superhero we can add it to the collection
 
   ```js

@@ -523,7 +523,7 @@ title: CSS - Cascade Style Sheet
 
 - This selector is represented by a single space ( ) character & combines two selectors such that elements matched by the second selector are selected if they have an ancestor element matching the first selector
 - It will apply to any element inside other element without being a direct dependency
-- [MDN Descendant selectors doc]()https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors
+- [MDN Descendant selectors doc](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors)
 
   **Example:**
 

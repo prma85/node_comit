@@ -16,12 +16,10 @@ module.exports = {
   scripts: ['https://buttons.github.io/buttons.js'],
   themeConfig: {
     algolia: {
-      apiKey: '1265343f7e001be91f5be260fd529063',
+      apiKey: '8749c390fc61de93801a6b0204e7da99',
+      appId: 'XFW2NCFWL6',
       indexName: 'prma85_node_comit',
       algoliaOptions: {}
-    },
-    googleAnalytics: {
-      trackingID: 'UA-157726893-1'
     },
     navbar: {
       title: 'Node JS Course',
@@ -29,7 +27,7 @@ module.exports = {
         alt: 'My Project Logo',
         src: 'img/logo.png'
       },
-      links: [
+      items: [
         { to: 'docs/01-intro', label: 'Course', position: 'left' },
         { to: 'docs/exercises/all-exercises', label: 'Exercises', position: 'left' },
         { to: 'docs/extra/all-extra', label: 'Extra Content', position: 'left' },
@@ -52,6 +50,9 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        googleAnalytics: {
+          trackingID: 'UA-157726893-1'
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           path: '../docs',
