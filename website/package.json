@@ -10,8 +10,8 @@
     "postinstall_old": "node -e \"try { require('fs').symlinkSync(require('path').resolve('./static/resources'), require('path').resolve('../') + '/resources') } catch (e) {}\""
   },
   "dependencies": {
-    "@docusaurus/core": "^2.3.1",
-    "@docusaurus/preset-classic": "^2.3.1",
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
